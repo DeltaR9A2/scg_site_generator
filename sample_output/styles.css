@@ -1,0 +1,149 @@
+body {
+  background-color: black;
+  font-family: Droid Sans, Bitstream Vera Sans, Verdana, Sans; }
+
+img.icon {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  float: left; }
+
+div, form, input, textarea {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: inline;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+  div.standard, form.standard, input.standard, textarea.standard {
+    background-color: #222222;
+    border-color: #555555;
+    color: white; }
+    div.standard a, form.standard a, input.standard a, textarea.standard a {
+      color: white; }
+      div.standard a:hover, form.standard a:hover, input.standard a:hover, textarea.standard a:hover {
+        background-color: #555555; }
+  div.understatement, form.understatement, input.understatement, textarea.understatement {
+    color: rgba(255, 255, 255, 0.25);
+    text-align: right;
+    padding: 5px; }
+  div.boxed, form.boxed, input.boxed, textarea.boxed {
+    border-width: 2px;
+    border-style: solid;
+    margin-top: 2px;
+    margin-bottom: 2px; }
+  div.text, form.text, input.text, textarea.text {
+    padding: 5px; }
+  div.blurb, form.blurb, input.blurb, textarea.blurb {
+    width: 600px; }
+    div.blurb div, form.blurb div, input.blurb div, textarea.blurb div {
+      float: right;
+      width: 535px; }
+  div.username, form.username, input.username, textarea.username {
+    width: 100%;
+    padding: 5px; }
+  div.content, form.content, input.content, textarea.content {
+    width: 100%;
+    padding: 5px;
+    font-family: Droid Sans, Bitstream Vera Sans, Verdana, Sans;
+    white-space: pre-line; }
+  div.button, form.button, input.button, textarea.button {
+    width: 100%;
+    font-weight: bold; }
+    div.button:hover, form.button:hover, input.button:hover, textarea.button:hover {
+      background-color: #445544;
+      cursor: pointer; }
+
+#fullpage {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  display: block;
+  overflow: hidden; }
+
+#header {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 600px;
+  float: left;
+  margin-bottom: 2px; }
+
+#site_navbar {
+  width: 600px; }
+  #site_navbar a {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-weight: bold; }
+
+#series_navbar_top {
+  font-size: 90%;
+  width: 600px;
+  text-align: center; }
+  #series_navbar_top a {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-weight: bold; }
+  #series_navbar_top a {
+    width: 20%; }
+
+#series_navbar_bottom {
+  font-size: 90%;
+  width: 600px;
+  text-align: center; }
+  #series_navbar_bottom a {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-weight: bold; }
+  #series_navbar_bottom a {
+    width: 20%; }
+
+#index_recent_comics_navbar {
+  font-size: 90%;
+  width: 600px;
+  text-align: center; }
+  #index_recent_comics_navbar a {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-weight: bold; }
+  #index_recent_comics_navbar a {
+    width: 20%; }
+  #index_recent_comics_navbar a {
+    width: auto;
+    padding: 5px; }
+
+#content {
+  width: 600px;
+  float: left;
+  display: inline; }
+
+#footer {
+  padding: 5px;
+  width: 600px;
+  text-align: center;
+  clear: both; }
+
+#subfooter {
+  padding: 5px;
+  width: 600px;
+  text-align: center;
+  clear: both; }

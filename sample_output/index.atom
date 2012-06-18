@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <author>
+    <name>[Site Owner Name]</name>
+  </author>
+  <id>http://example.com/</id>
+  <title>Sample Site</title>
+  <updated>2012-06-18T04:20:24-05:00</updated>
+  <entry>
+    <id>http://example.com/default_comic_001.html</id>
+    <link href="http://example.com/default_comic_001.html"/>
+    <title>default comic 001</title>
+    <updated>2012-01-01T00:00:00-06:00</updated>
+    <dc:date>2012-01-01T00:00:00-06:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://example.com/default_comic_002.html</id>
+    <link href="http://example.com/default_comic_002.html"/>
+    <title>default comic 002</title>
+    <updated>2012-01-01T00:00:00-06:00</updated>
+    <dc:date>2012-01-01T00:00:00-06:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://example.com/default_comic_003.html</id>
+    <link href="http://example.com/default_comic_003.html"/>
+    <title>default comic 003</title>
+    <updated>2012-01-01T00:00:00-06:00</updated>
+    <dc:date>2012-01-01T00:00:00-06:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://example.com/default_comic_004.html</id>
+    <link href="http://example.com/default_comic_004.html"/>
+    <title>default comic 004</title>
+    <updated>2012-01-01T00:00:00-06:00</updated>
+    <dc:date>2012-01-01T00:00:00-06:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://example.com/default_comic_005.html</id>
+    <link href="http://example.com/default_comic_005.html"/>
+    <title>default comic 005</title>
+    <updated>2012-01-01T00:00:00-06:00</updated>
+    <dc:date>2012-01-01T00:00:00-06:00</dc:date>
+  </entry>
+  <dc:date>2012-06-18T04:20:24-05:00</dc:date>
+</feed>

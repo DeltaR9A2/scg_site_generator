@@ -1,0 +1,61 @@
+!!! 5
+%head
+	%title
+		= $config["site_title"]
+
+	%meta(content="text/html" http-equiv="Content-Type"  charset="UTF-8")
+	%link{:rel => "stylesheet", :type => "text/css", :href => "styles.css"}
+	%link{:rel => "alternate", :type => "application/atom+xml", :href => "index.atom", :title => "Atom Feed"}
+	%link{:rel => "alternate", :type => "application/rss+xml", :href => "index.rss", :title => "RSS Feed"}
+
+	%script{:type => "text/javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
+	%script{:type => "text/javascript", :src => "jquery.timeago.js"}
+
+	:javascript
+		jQuery(document).ready(function() {
+			jQuery("abbr.timeago").timeago();
+		});
+
+%body
+	#fullpage
+		%img#header{:src => $config["header_image"], :alt=> $config["header_alt_text"]}
+
+		#site_navbar.standard.boxed.navbar
+			%a{:href => 'index.html'}Home
+			%a{:href => 'archive.html'}Archive
+
+		- if $page_type == :front
+			#content
+				#index_recent_comics_navbar.standard.boxed.navbar
+					%h3 Recent Comics
+					= recent_comics
+				= recent_news
+
+		- if $page_type == :comic
+			#content
+				#series_navbar_top.standard.boxed
+					%a{:href => first_comic} First
+					%a{:href => previous_comic} Previous
+					%a{:href => next_comic} Next
+					%a{:href => newest_comic} Newest
+				%img{:src => comic_image, :alt => "Comic: #{comic_title}; No transcript available."}
+				#series_navbar_top.standard.boxed
+					%a{:href => first_comic} First
+					%a{:href => previous_comic} Previous
+					%a{:href => next_comic} Next
+					%a{:href => newest_comic} Newest
+
+		- if $page_type == :archive
+			#content
+				.standard.boxed.text.blurb
+					= comic_list
+		
+		#footer.standard.boxed
+			= "#{$config['site_title']} is &copy; #{$config['copyright_name']} #{$config['copyright_years']}"
+
+		#subfooter.understatement<
+			(this page was generated&nbsp;
+			%abbr.timeago{:title => Time.now}<>
+				= Time.now
+			)
+

@@ -1,0 +1,168 @@
+
+$page_width: 600px
+$comic_width: 600px
+
+$box_border: 2px
+$box_spacing: 4px
+
+$text_padding: 5px
+
+$icon_size: 50px
+$icon_margin: 5px
+
+$font_family: Droid Sans, Bitstream Vera Sans, Verdana, Sans
+
+$body_bg_color: #000000
+
+$standard_text_color: #FFFFFF
+$standard_link_color: #FFFFFF
+$standard_bg_color: #222222
+$standard_border_color: #555555
+
+$interactive_text_color: #DDFFDD
+$interactive_link_color: #DDFFDD
+$interactive_bg_color: #112211
+$interactive_border_color: #445544
+
+@mixin reset_box
+	border:	0
+	margin:	0
+	padding:	0
+
+body
+	background-color:	$body_bg_color
+	font-family: $font_family
+
+img
+	&.icon
+		width:	$icon_size
+		height:	$icon_size
+		margin: $icon_margin
+		float: left
+
+div , form, input, textarea
+	@include reset_box
+
+	float: left
+	display: inline
+	box-sizing: border-box
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+
+	&.standard
+		background-color:	$standard_bg_color
+		border-color:	$standard_border_color
+		color: $standard_text_color
+
+		a
+			color: $standard_link_color
+			&:hover
+				background-color: $standard_border_color
+
+	&.understatement
+		color: rgba($standard_text_color, 0.25)
+		text-align: right
+		padding: $text_padding
+
+	&.boxed
+		border-width: $box_border
+		border-style: solid
+		margin-top: $box_spacing / 2
+		margin-bottom:	$box_spacing / 2
+
+	&.text
+		padding:	$text_padding
+
+	&.blurb
+		width: $comic_width
+		div
+			float: right
+			width: $comic_width - ($icon_size + ($icon_margin * 3))
+
+	&.username
+		width: 100%
+		padding: $text_padding
+
+	&.content
+		width: 100%
+		padding: $text_padding
+		font-family: $font_family
+		white-space: pre-line
+
+	&.button
+		width: 100%
+		font-weight: bold
+		&:hover
+			background-color: $interactive_border_color
+			cursor: pointer
+
+#fullpage
+	width:	$page_width
+	margin-left: auto
+	margin-right: auto
+	float: none
+	display: block
+	overflow: hidden
+
+#header
+	@include	reset_box
+
+	width:	$page_width
+	float:	left
+	margin-bottom:	$box_spacing / 2
+
+
+@mixin navbar
+	a
+		display:	inline-block
+		padding-top:	$text_padding
+		padding-bottom:	$text_padding
+		padding-left:	$text_padding * 2
+		padding-right:	$text_padding * 2
+		text-decoration:	none
+		font-weight:	bold
+
+#site_navbar
+	@include	navbar
+
+	width:	$page_width
+
+@mixin comic_navbar
+	@include navbar
+
+	font-size:	90%
+	width:	$comic_width
+	text-align:	center
+
+	a
+		width:	20%
+
+#series_navbar_top
+	@include comic_navbar
+
+#series_navbar_bottom
+	@include comic_navbar
+
+#index_recent_comics_navbar
+	@include comic_navbar
+
+	a
+		width: auto
+		padding: $text_padding
+
+#content
+	width:	$comic_width
+	float:	left
+	display:	inline
+
+#footer
+	padding:	$text_padding
+	width:	$page_width
+	text-align:	center
+	clear:	both
+
+#subfooter
+	padding:	$text_padding
+	width:	$page_width
+	text-align:	center
+	clear:	both

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    Sample Site
+  </title>
+  <meta charset='UTF-8' content='text/html' http-equiv='Content-Type' />
+  <link href='styles.css' rel='stylesheet' type='text/css' />
+  <link href='index.atom' rel='alternate' title='Atom Feed' type='application/atom+xml' />
+  <link href='index.rss' rel='alternate' title='RSS Feed' type='application/rss+xml' />
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js' type='text/javascript'></script>
+  <script src='jquery.timeago.js' type='text/javascript'></script>
+  <script type='text/javascript'>
+    //<![CDATA[
+      jQuery(document).ready(function() {
+      	jQuery("abbr.timeago").timeago();
+      });
+    //]]>
+  </script>
+</head>
+<body>
+  <div id='fullpage'>
+    <img alt='Title Image: Sample Site; created by the SCG Site Generator' id='header' src='sample_header_600px.png' />
+    <div class='standard boxed navbar' id='site_navbar'>
+      <a href='index.html'>Home</a>
+      <a href='archive.html'>Archive</a>
+    </div>
+    <div id='content'>
+      <div class='standard boxed navbar' id='index_recent_comics_navbar'>
+        <h3>Recent Comics</h3>
+        <a href='default_comic_001.html'><img src='default_comic_001_thumb.png'></a><a href='default_comic_002.html'><img src='default_comic_002_thumb.png'></a><a href='default_comic_003.html'><img src='default_comic_003_thumb.png'></a><a href='default_comic_004.html'><img src='default_comic_004_thumb.png'></a><a href='default_comic_005.html'><img src='default_comic_005_thumb.png'></a>
+      </div>
+      <div class='standard boxed blurb'><img class='icon' src='icon_information.png'/><div class='text'>This frontpage news item is a sample included with the SCG Site Generator.</div><div class='understatement'>(Posted <abbr class='timeago' title='2012-01-01 00:00:00 +0000'>2012-01-01 00:00:00 +0000</abbr>)</div></div><div class='standard boxed blurb'><img class='icon' src='icon_information.png'/><div class='text'>This frontpage news item is a sample included with the SCG Site Generator.</div><div class='understatement'>(Posted <abbr class='timeago' title='2012-01-01 00:00:00 +0000'>2012-01-01 00:00:00 +0000</abbr>)</div></div><div class='standard boxed blurb'><img class='icon' src='icon_information.png'/><div class='text'>This frontpage news item is a sample included with the SCG Site Generator.</div><div class='understatement'>(Posted <abbr class='timeago' title='2012-01-01 00:00:00 +0000'>2012-01-01 00:00:00 +0000</abbr>)</div></div><div class='standard boxed blurb'><img class='icon' src='icon_information.png'/><div class='text'>This frontpage news item is a sample included with the SCG Site Generator.</div><div class='understatement'>(Posted <abbr class='timeago' title='2012-01-01 00:00:00 +0000'>2012-01-01 00:00:00 +0000</abbr>)</div></div><div class='standard boxed blurb'><img class='icon' src='icon_information.png'/><div class='text'>This frontpage news item is a sample included with the SCG Site Generator.</div><div class='understatement'>(Posted <abbr class='timeago' title='2012-01-01 00:00:00 +0000'>2012-01-01 00:00:00 +0000</abbr>)</div></div>
+    </div>
+    <div class='standard boxed' id='footer'>
+      Sample Site is &copy; [Site Owner Name] [Range of Years]
+    </div>
+    <div class='understatement' id='subfooter'>(this page was generated&nbsp;<abbr class='timeago' title='2012-06-18 04:20:24 -0500'>2012-06-18 04:20:24 -0500</abbr>)</div>
+  </div>
+</body>
